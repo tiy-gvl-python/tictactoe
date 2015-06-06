@@ -72,7 +72,7 @@ def turn(player, bot):
     print_board()
     row = -1
     column = -1
-    if bot == "person":
+    if bot in ["player", "person"]:
         print("You are {}'s'.".format(player))
         while True:
             cell = input("Input grid letter first. > ").lower()
